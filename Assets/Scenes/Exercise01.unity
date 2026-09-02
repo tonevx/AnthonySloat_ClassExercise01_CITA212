@@ -434,8 +434,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &520431129
-CapsuleCollider2D:
+--- !u!61 &520431129
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -469,8 +469,17 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
-  m_Direction: 0
+  m_EdgeRadius: 0
 --- !u!1 &600388408
 GameObject:
   m_ObjectHideFlags: 0
@@ -559,7 +568,7 @@ Transform:
   m_GameObject: {fileID: 600388408}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.08217001, y: -4.82873, z: 0}
+  m_LocalPosition: {x: 0.02737552, y: -3.8424287, z: 0}
   m_LocalScale: {x: 1.3555725, y: 1.7778, z: 1.7778}
   m_ConstrainProportionsScale: 0
   m_Children: []
