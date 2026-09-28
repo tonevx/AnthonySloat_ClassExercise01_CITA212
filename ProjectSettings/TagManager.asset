@@ -8,6 +8,8 @@ TagManager:
   - Trigger
   - Package
   - Customer
+  - Enemy
+  - GStone
   layers:
   - Default
   - TransparentFX

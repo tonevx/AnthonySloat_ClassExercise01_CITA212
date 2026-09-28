@@ -12,6 +12,8 @@ public class PlayerMove : MonoBehaviour
     SpriteRenderer ShirouEmiyaStandInRender;
     SpriteRenderer CustomerRender;
     SpriteRenderer CustomerRender2;
+
+    [SerializeField] ParticleSystem testmyParticle;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,7 +22,7 @@ public class PlayerMove : MonoBehaviour
         ShirouEmiyaStandInRender = GetComponent<SpriteRenderer>();
     }
 
-    
+
     // Update is called once per frame
     void Update()
     {
@@ -75,5 +77,13 @@ public class PlayerMove : MonoBehaviour
                 Debug.Log("You don't have a package to deliver!");
             }
         }
+         if(other.CompareTag("Trigger"))
+        {
+            testmyParticle.Play();
+        }
+    }
+    void OnTriggerExit2D(Collider2D collision)
+    {
+         testmyParticle.Stop();
     }
 }
