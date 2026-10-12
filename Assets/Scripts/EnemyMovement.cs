@@ -2,6 +2,7 @@ using UnityEngine;
 public class EnemyCollision: MonoBehaviour
 {
     [SerializeField] private ParticleSystem hitEffect;
+
     void OnCollisionEnter2D (Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -10,5 +11,9 @@ public class EnemyCollision: MonoBehaviour
             hitEffect.Play();
             Debug.Log("Enemy hit by Player!");
         }
+    }
+     void OnCollisionExit2D (Collision2D collision)
+    {
+        hitEffect.Stop();
     }
 }
